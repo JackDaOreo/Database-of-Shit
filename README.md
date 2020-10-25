@@ -10,17 +10,3 @@ If you would like to submit a program FOLLOW THESE RULES:
 8. Properly document through comment the purpose of your code to help others better read it.
 
 Note: Do not publish the code before uploading to GitHub as it will become to large to upload.
-
-FORMAT:
-All Namespaces, Classes, Methods, and Exception handlers must use curly brackets like so:
-
-Class Program
-{
-
-}
-
-All if statements, for loops, while loops, case switches, etc. must use curly brackets like so:
-
-while (true) {
-
-}

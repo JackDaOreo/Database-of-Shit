@@ -14,16 +14,8 @@ namespace C_Program
             //Input
             while (true){
                 Console.Write("What is the size of your penis (in): ");
-                try
-                {
-                    length = Convert.ToDouble(Console.ReadLine());
-                }
-                catch (System.Exception ex)
-                {
-                    Console.WriteLine("\nError: " + ex.Message + "\n");
-                    PhallicMeasurement();
-                }
-
+                length = Convert.ToDouble(Console.ReadLine());
+                
                 //Percent calc
                 double percent = 5.4 - length;
                 percent = percent / 5.4;
@@ -60,21 +52,13 @@ namespace C_Program
         static public void IsPrimeNumber()
         {
             bool ans = false;
-            int input = 0;
+            int input;
 
             //Input
             Console.Write("\nEnter an integer: ");
-            try
-            {
-                input = Convert.ToInt32(Console.ReadLine());
-            }
-            catch (System.Exception ex)
-            {
-                Console.WriteLine("\nError: " + ex.Message + "\n");
-                IsPrimeNumber();
-            }
+            input = Convert.ToInt32(Console.ReadLine());
 
-            //Exceptions
+            //Exceptions to the rule
             switch(input) {
                 case 1:
                     ans = false;

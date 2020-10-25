@@ -29,7 +29,14 @@ namespace C_Program
                         break;
                     //Phallic Measurement
                     case 1:
-                        AllPrograms.PhallicMeasurement();
+                        try
+                        {
+                            AllPrograms.PhallicMeasurement();
+                        }
+                        catch (System.Exception ex)
+                        {
+                            Console.WriteLine("\nError: " + ex.Message);
+                        }
                         break;
                     //EMPTY
                     case 2:
@@ -40,7 +47,14 @@ namespace C_Program
                         break;
                     //Prime Number Detector
                     case 4:
-                        AllPrograms.IsPrimeNumber();
+                        try
+                        {
+                            AllPrograms.IsPrimeNumber();
+                        }
+                        catch (System.Exception ex)
+                        {
+                            Console.WriteLine("\nError: " + ex.Message);
+                        }
                         break;
                     default:
                         Console.Write("\nEnter a valid number.");

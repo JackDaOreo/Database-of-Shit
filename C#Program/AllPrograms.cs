@@ -9,7 +9,7 @@ namespace C_Program
     {
         static public void PhallicMeasurement()
         {
-            double length;
+            double length = 0;
 
             //Input
             while (true){
@@ -18,9 +18,10 @@ namespace C_Program
                 {
                     length = Convert.ToDouble(Console.ReadLine());
                 }
-                catch (System.Exception)
+                catch (System.Exception ex)
                 {
-                    throw;
+                    Console.WriteLine("\nError: " + ex.Message + "\n");
+                    PhallicMeasurement();
                 }
 
                 //Percent calc
@@ -59,7 +60,7 @@ namespace C_Program
         static public void IsPrimeNumber()
         {
             bool ans = false;
-            int input;
+            int input = 0;
 
             //Input
             Console.Write("\nEnter an integer: ");
@@ -67,9 +68,10 @@ namespace C_Program
             {
                 input = Convert.ToInt32(Console.ReadLine());
             }
-            catch (System.Exception)
+            catch (System.Exception ex)
             {
-                throw;
+                Console.WriteLine("\nError: " + ex.Message + "\n");
+                IsPrimeNumber();
             }
 
             //Exceptions

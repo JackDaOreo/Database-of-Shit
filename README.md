@@ -1,4 +1,7 @@
 # Database-of-Shit
+
+You must have VSCode and .NET to edit this code.
+
 If you would like to submit a program FOLLOW THESE RULES:
 1. If your program requires multiple methods, create a new '.cs' file named appropriately
 2. If your program can be contained within a single method, name a new method appropriately inside 'AllPrograms.cs'

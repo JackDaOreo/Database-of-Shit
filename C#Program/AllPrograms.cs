@@ -13,7 +13,7 @@ namespace C_Program
             Console.WriteLine("Welcome to JacksMom, an interactive experience.");
             Console.Write("Input something: ");
             string x = Console.ReadLine();
-            Console.WriteLine(x);
+            Console.WriteLine("Hahaha, Jack's mom");
         }
 
         static public void PhallicMeasurement()

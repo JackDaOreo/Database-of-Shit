@@ -1,5 +1,7 @@
 # Database-of-Shit
 
+Download the framework dependant version here: https://drive.google.com/file/d/1hhodkkBG9RPq6olNzoUSQSKXksYzM72i/view?usp=sharing
+
 You must have VSCode and .NET to edit this code.
 
 If you would like to submit a program FOLLOW THESE RULES:

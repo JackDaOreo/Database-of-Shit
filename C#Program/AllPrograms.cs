@@ -34,7 +34,7 @@ namespace C_Program
                 //End calc
 
                 if (length > 5.4) {
-                    Console.Write("\nYour lying. ");
+                    Console.Write("\nYou're lying. ");
                 } else if (length < 5.4) {
                     Console.WriteLine("\nThank you for your honesty. Your penis size is now saved in the database.\n\nFun fact: your penis is " + percent +"% below the average.");
                     break;

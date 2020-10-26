@@ -7,6 +7,15 @@ namespace C_Program
 {
     class AllPrograms
     {
+
+        static public void JackMom()
+        {
+            Console.WriteLine("Welcome to JacksMom, an interactive experience.");
+            Console.Write("Input something: ");
+            string x = Console.ReadLine();
+            Console.WriteLine(x);
+        }
+
         static public void PhallicMeasurement()
         {
             double length = 0;

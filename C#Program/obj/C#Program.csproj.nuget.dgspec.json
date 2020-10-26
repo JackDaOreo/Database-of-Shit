@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jack D'Iorio\\Desktop\\C#Program\\C#Program.csproj": {}
+    "C:\\Users\\Jack D'Iorio\\Documents\\GitHub\\Database-of-Shit\\C#Program\\C#Program.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jack D'Iorio\\Desktop\\C#Program\\C#Program.csproj": {
+    "C:\\Users\\Jack D'Iorio\\Documents\\GitHub\\Database-of-Shit\\C#Program\\C#Program.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jack D'Iorio\\Desktop\\C#Program\\C#Program.csproj",
+        "projectUniqueName": "C:\\Users\\Jack D'Iorio\\Documents\\GitHub\\Database-of-Shit\\C#Program\\C#Program.csproj",
         "projectName": "C#Program",
-        "projectPath": "C:\\Users\\Jack D'Iorio\\Desktop\\C#Program\\C#Program.csproj",
+        "projectPath": "C:\\Users\\Jack D'Iorio\\Documents\\GitHub\\Database-of-Shit\\C#Program\\C#Program.csproj",
         "packagesPath": "C:\\Users\\Jack D'Iorio\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jack D'Iorio\\Desktop\\C#Program\\obj\\",
+        "outputPath": "C:\\Users\\Jack D'Iorio\\Documents\\GitHub\\Database-of-Shit\\C#Program\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Jack D'Iorio\\AppData\\Roaming\\NuGet\\NuGet.Config"

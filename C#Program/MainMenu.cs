@@ -12,7 +12,7 @@ namespace C_Program
             //Directory code
             while (true) {
                 int directory = 0;
-                Console.WriteLine("(0) Exit\n(1) Phallic Measurement\n(2) Tic-Tac-Toe\n(3) Play Ventura Highway\n(4) Prime Number Detector\n(5) www.Privateeyeri.com");
+                Console.WriteLine("(0) Exit\n(1) Phallic Measurement\n(2) Tic-Tac-Toe\n(3) Play Ventura Highway\n(4) Prime Number Detector\n(5) www.Privateeyeri.com\n(6) Jacks Mom");
                 Console.Write("Type the number of the program to execute: ");
                 try
                 {
@@ -68,6 +68,16 @@ namespace C_Program
                     //Privateeyeri
                     case 5:
                         System.Diagnostics.Process.Start("cmd","/c start https://privateeyeri.com/index.html#");
+                        break;
+                    case 6:
+                        try
+                        {
+                            AllPrograms.JackMom();
+                        }
+                        catch (System.Exception ex)
+                        {
+                            Console.WriteLine("\nError: " + ex.Message);
+                        }
                         break;
                     default:
                         Console.Write("\nEnter a valid number.");

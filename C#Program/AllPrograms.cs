@@ -7,7 +7,6 @@ namespace C_Program
 {
     class AllPrograms
     {
-
         static public void JackMom()
         {
             Console.WriteLine("Welcome to JacksMom, an interactive experience.");

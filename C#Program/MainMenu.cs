@@ -40,7 +40,6 @@ namespace C_Program
                         break;
                     //Tic-Tac-Toe
                     case 2:
-                        //Console.WriteLine("\nTicTacToe is still a work in progress, please choose another option.");
                         try
                         {
                            TicTacToe.TicTacToeGame(); 

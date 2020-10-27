@@ -18,9 +18,12 @@ namespace C_Program
                 {
                     directory = Convert.ToInt32(Console.ReadLine());
                 }
-                catch (System.Exception ex)
+                catch (System.Exception)
                 {
-                    Console.WriteLine("\nError: " + ex.Message);
+                    Console.WriteLine("\nError: Please input an integer");
+                    Console.ReadKey();
+                    Console.Clear();
+                    Main(null);
                 }
                 switch (directory) {
                     //Exit

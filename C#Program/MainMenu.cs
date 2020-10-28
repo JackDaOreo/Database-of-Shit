@@ -71,6 +71,7 @@ namespace C_Program
                     case 5:
                         System.Diagnostics.Process.Start("cmd","/c start https://privateeyeri.com/index.html#");
                         break;
+                    //Jacks Mom
                     case 6:
                         try
                         {
@@ -81,10 +82,11 @@ namespace C_Program
                             Console.WriteLine("\nError: " + ex.Message);
                         }
                         break;
+                    //Real Half Birthday Calculator
                     case 7:
                         try
                         {
-                            AllPrograms.realhalfBirthday();
+                            AllPrograms.RealHalfBirthday();
                         }
                         catch (System.Exception ex)
                         {

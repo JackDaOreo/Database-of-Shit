@@ -103,7 +103,8 @@ namespace C_Program
             }
         }
 
-        static public void realhalfBirthday(){
+        static public void RealHalfBirthday()
+        {
             // Getting input and splitting months from days
             Console.WriteLine("Input your birthday in mm/dd format, for exampple: 01/23 is January 23");
             string bDay = Console.ReadLine();
@@ -112,14 +113,13 @@ namespace C_Program
             Console.WriteLine("Is it a leap year? y/n");
             string lYear = Console.ReadLine();
             bool islYear = false;
-            if(lYear == "y"){
+            if (lYear == "y") {
                 islYear = true;
-            }else if(lYear == "n"){
+            } else if (lYear == "n") {
                 islYear = false;
-            }else {
+            } else {
                 Console.WriteLine("Fuck you, you had one job.");
             }
-
             string[] date = bDay.Split('/');
 
             // Indexing names of months and number of days into the year at the beginning of each month
@@ -129,8 +129,7 @@ namespace C_Program
             // Find number of days into the year that half birthday is
             int bDaysIn = daysIn[Convert.ToInt16(date[0])-1] + Convert.ToInt16(date[1]);
             int hbDayIn = bDaysIn + 182;
-            if(hbDayIn > 365)
-            {
+            if(hbDayIn > 365) {
                 hbDayIn -= 365;
             }
 
@@ -138,9 +137,9 @@ namespace C_Program
             string hbMonth = "";
             int hbDay = 0;
             int iters = 0;
-            foreach(int x in daysIn){
+            foreach (int x in daysIn) {
                 iters += 1;
-                if(hbDayIn < x){
+                if (hbDayIn < x) {
                     // Apply Leap Year
                     if(iters-2 >= 2 && islYear == true){
                         hbDayIn += 1;
@@ -153,7 +152,6 @@ namespace C_Program
 
             // Output
             Console.WriteLine("Your half birthday this year is/was: " + hbMonth + " " + hbDay );
-
         }
     }
 }

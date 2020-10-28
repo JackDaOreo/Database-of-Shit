@@ -57,6 +57,7 @@ namespace C_Program
             }
         }
 
+
         static public void IsPrimeNumber()
         {
             bool ans = false;
@@ -100,6 +101,59 @@ namespace C_Program
             } else {
                 Console.WriteLine("\n" + input + " is a prime number.");
             }
+        }
+
+        static public void realhalfBirthday(){
+            // Getting input and splitting months from days
+            Console.WriteLine("Input your birthday in mm/dd format, for exampple: 01/23 is January 23");
+            string bDay = Console.ReadLine();
+            
+            // Check for leap year
+            Console.WriteLine("Is it a leap year? y/n");
+            string lYear = Console.ReadLine();
+            bool islYear = false;
+            if(lYear == "y"){
+                islYear = true;
+            }else if(lYear == "n"){
+                islYear = false;
+            }else {
+                Console.WriteLine("Fuck you, you had one job.");
+            }
+
+            string[] date = bDay.Split('/');
+
+            // Indexing names of months and number of days into the year at the beginning of each month
+            string[] months = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
+            int[] daysIn = {0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 335};
+
+            // Find number of days into the year that half birthday is
+            int bDaysIn = daysIn[Convert.ToInt16(date[0])-1] + Convert.ToInt16(date[1]);
+            int hbDayIn = bDaysIn + 182;
+            if(hbDayIn > 365)
+            {
+                hbDayIn -= 365;
+            }
+
+            // Find month and day of half birthday
+            string hbMonth = "";
+            int hbDay = 0;
+            int iters = 0;
+            foreach(int x in daysIn){
+                iters += 1;
+                if(hbDayIn < x){
+                    // Apply Leap Year
+                    if(iters-2 >= 2 && islYear == true){
+                        hbDayIn += 1;
+                        }
+                    hbDay = hbDayIn - daysIn[iters-2];
+                    hbMonth = months[iters-2];
+                    break;
+                }
+            }
+
+            // Output
+            Console.WriteLine("Your half birthday this year is/was: " + hbMonth + " " + hbDay );
+
         }
     }
 }

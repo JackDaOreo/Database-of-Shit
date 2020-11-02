@@ -12,7 +12,7 @@ namespace C_Program
             //Directory code
             while (true) {
                 int directory = 0;
-                Console.WriteLine("(0) Exit\n(1) Phallic Measurement\n(2) Tic-Tac-Toe\n(3) Play Ventura Highway\n(4) Prime Number Detector\n(5) www.Privateeyeri.com\n(6) Jacks Mom\n(7) Real Half Birthday Calculator");
+                Console.WriteLine("(0) Exit\n(1) Phallic Measurement\n(2) Tic-Tac-Toe\n(3) Play Ventura Highway\n(4) Prime Number Detector\n(5) www.Privateeyeri.com\n(6) Jacks Mom\n(7) Real Half Birthday Calculator\n(8) Rock Paper Scissors");
                 Console.Write("Type the number of the program to execute: ");
                 try
                 {
@@ -87,6 +87,17 @@ namespace C_Program
                         try
                         {
                             AllPrograms.RealHalfBirthday();
+                        }
+                        catch (System.Exception ex)
+                        {
+                            Console.WriteLine("\nError: " + ex.Message);
+                        }
+                        break;
+                    //Real Half Birthday Calculator
+                    case 8:
+                        try
+                        {
+                            RockPaperScissors.play();
                         }
                         catch (System.Exception ex)
                         {

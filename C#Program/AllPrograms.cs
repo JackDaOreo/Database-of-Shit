@@ -7,6 +7,31 @@ namespace C_Program
 {
     class AllPrograms
     {
+        static public void BetterRPS()
+        {
+            //Setup
+            Random rnd = new Random();
+            Console.WriteLine("\nYour computer will now expierence an epic duel between two professionally\ntrained rock-paper-scissors AI. Hit any key to begin.");
+            Console.ReadKey();
+            Console.Write("Processing");
+            for (int i = 0; i < 3; i++) {
+                Thread.Sleep(2000);
+                Console.Write(" .");
+            }
+            Thread.Sleep(2000);
+
+            //Determine winner
+            int winner = rnd.Next(0,2);
+            switch (winner) {
+                case 0:
+                    Console.WriteLine("\nPlayer One has won.");
+                    break;
+                case 1:
+                    Console.WriteLine("\nPlayer Two has won.");
+                    break;
+            }
+        }
+
         static public void JackMom()
         {
             Console.WriteLine("Welcome to JacksMom, an interactive experience.");

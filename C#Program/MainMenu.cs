@@ -12,7 +12,7 @@ namespace C_Program
             //Directory code
             while (true) {
                 int directory = 0;
-                Console.WriteLine("(0) Exit\n(1) Phallic Measurement\n(2) Tic-Tac-Toe\n(3) Play Ventura Highway\n(4) Prime Number Detector\n(5) www.Privateeyeri.com\n(6) Jacks Mom\n(7) Real Half Birthday Calculator\n(8) Rock Paper Scissors");
+                Console.WriteLine("(0) Exit\n(1) Phallic Measurement\n(2) Tic-Tac-Toe\n(3) Play Ventura Highway\n(4) Prime Number Detector\n(5) www.Privateeyeri.com\n(6) Jacks Mom\n(7) Real Half Birthday Calculator\n(8) Rock Paper Scissors\n(9) Advance Rock Paper Scissors");
                 Console.Write("Type the number of the program to execute: ");
                 try
                 {
@@ -77,9 +77,9 @@ namespace C_Program
                         {
                             AllPrograms.JackMom();
                         }
-                        catch (System.Exception ex)
+                        catch (System.Exception)
                         {
-                            Console.WriteLine("\nError: " + ex.Message);
+                            Console.WriteLine("\nError: Shake it like a polaroid picture");
                         }
                         break;
                     //Real Half Birthday Calculator
@@ -93,11 +93,22 @@ namespace C_Program
                             Console.WriteLine("\nError: " + ex.Message);
                         }
                         break;
-                    //Real Half Birthday Calculator
+                    //Rock Paper Scissors
                     case 8:
                         try
                         {
                             RockPaperScissors.play();
+                        }
+                        catch (System.Exception ex)
+                        {
+                            Console.WriteLine("\nError: " + ex.Message);
+                        }
+                        break;
+                    //Advanced Rock Paper Scissors
+                    case 9:
+                        try
+                        {
+                            AllPrograms.BetterRPS();
                         }
                         catch (System.Exception ex)
                         {
